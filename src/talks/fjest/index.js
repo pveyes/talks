@@ -1,5 +1,14 @@
 import React from 'react';
-import { Deck, Slide, Text } from 'spectacle';
+import { Deck, Slide, Heading, Text } from 'spectacle';
+import createTheme from 'spectacle/lib/themes/default';
+import Dim from '../../shared/Dim';
+import PersonalBackgroundSlide from '../../shared/slides/PersonalBackground';
+
+const theme = createTheme({
+  primary: '#99424f',
+}, {
+  primary: 'Helvetica, sans-serif',
+});
 
 export default class FJest extends React.Component {
   static info = {
@@ -8,12 +17,19 @@ export default class FJest extends React.Component {
 
   render() {
     return (
-      <Deck>
+      <Deck theme={theme}>
         <Slide>
-          <Text>{'Testing JavaScript Applications with Jest'}</Text>
+          <Heading textSize={44}>Testing JavaScript Applications with Jest</Heading>
+          <div style={{marginTop: '1em'}}>
+            <Text textSize={28} textColor="#fff">
+              <Dim>https://</Dim>
+              <span>talks.fatihkalifa.com/fjest</span>
+            </Text>
+          </div>
         </Slide>
+        <PersonalBackgroundSlide />
         <Slide>
-          <Text>{'Testing Applications with Jest'}</Text>
+
         </Slide>
       </Deck>
     );
