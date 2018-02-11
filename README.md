@@ -4,7 +4,7 @@
 
 ## List of Talks
 
-- [Testing JavaScript Applications with Jest](/fjest)
+- [Testing JavaScript Applications with Jest](/src/talks/fjest)
 
 ## Running Locally
 
