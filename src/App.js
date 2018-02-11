@@ -36,6 +36,7 @@ class App extends Component {
               {talks.map(talk => (
                 <li key={talk.path}>
                   <Link to={talk.path}>{talk.info.title}</Link>
+                  <p>{talk.info.description}</p>
                 </li>
               ))}
             </ul>

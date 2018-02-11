@@ -1696,6 +1696,15 @@ babel-plugin-named-asset-import@1.0.0-next.47d2d941:
   version "1.0.0-next.47d2d941"
   resolved "https://registry.npmjs.org/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-1.0.0-next.47d2d941.tgz#a4bf92153befb311def0afba6690819d9032bbd9"
 
+babel-plugin-preval@^1.6.2:
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/babel-plugin-preval/-/babel-plugin-preval-1.6.3.tgz#df784357410a9762f01bf0c5705e2c070eac3ccb"
+  dependencies:
+    babel-plugin-macros "^2.0.0"
+    babel-register "^6.26.0"
+    babylon "^6.18.0"
+    require-from-string "^2.0.1"
+
 babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
   resolved "https://registry.npmjs.org/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
@@ -7208,6 +7217,12 @@ pretty-format@^22.1.0:
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
+
+preval.macro@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/preval.macro/-/preval.macro-1.0.2.tgz#1a0043f67719c0816e8526f7e3975df47d525b24"
+  dependencies:
+    babel-plugin-preval "^1.6.2"
 
 prismjs@^1.6.0:
   version "1.11.0"
