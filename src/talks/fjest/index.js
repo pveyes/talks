@@ -1,37 +1,16 @@
-import React from 'react';
-import { Deck, Slide, Heading, Text } from 'spectacle';
-import createTheme from 'spectacle/lib/themes/default';
-import Dim from '../../shared/Dim';
-import PersonalBackgroundSlide from '../../shared/slides/PersonalBackground';
+import React, { Component }  from 'react';
+import dynamic from '../../shared/dynamic';
 
-const theme = createTheme({
-  primary: '#99424f',
-}, {
-  primary: 'Helvetica, sans-serif',
-});
+const SlideDeck = dynamic(() => import('./Deck'));
 
-export default class FJest extends React.Component {
+export default class FJest extends Component {
   static info = {
     title: 'Testing JavaScript Applications with Jest',
+    date: new Date('2018-02-20'),
+    SlideDeck,
   }
 
   render() {
-    return (
-      <Deck theme={theme}>
-        <Slide>
-          <Heading textSize={44}>Testing JavaScript Applications with Jest</Heading>
-          <div style={{marginTop: '1em'}}>
-            <Text textSize={28} textColor="#fff">
-              <Dim>https://</Dim>
-              <span>talks.fatihkalifa.com/fjest</span>
-            </Text>
-          </div>
-        </Slide>
-        <PersonalBackgroundSlide />
-        <Slide>
-
-        </Slide>
-      </Deck>
-    );
+    return <SlideDeck />;
   }
 }

@@ -8,9 +8,21 @@ const talks = Object.keys(talkEntry).map(path => ({
   path: path.replace(/\.\/talks\/(\w+)\/index\.js/, '/$1'),
   Component: talkEntry[path].default,
   info: talkEntry[path].default.info,
-}));
+})).sort((t1, t2) => {
+  if (t1.info.date > t2.info.date) {
+    return 1;
+  }
+
+  return -1;
+});
 
 class App extends Component {
+  componentDidMount() {
+    talks.slice(0, 3).forEach(talk => {
+      talk.info.SlideDeck.preload()
+    });
+  }
+
   render() {
     return (
       <Switch>
