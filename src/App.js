@@ -19,8 +19,8 @@ class App extends Component {
         ))}
         <Route render={() => (
           <div>
-            <h1>Talks</h1>
-            <ul>
+            <h1>{`Talks`}</h1>
+            <ul className='talks'>
               {talks.map(talk => (
                 <li key={talk.path}>
                   <Link to={talk.path}>{talk.info.title}</Link>

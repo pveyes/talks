@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "cypress": "^1.4.2",
     "import-all.macro": "^2.0.3",
-    "react-scripts": "2.0.0-next.47d2d941"
+    "react-scripts": "2.0.0-next.47d2d941",
+    "serve": "^6.4.9"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -16,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:ci": "serve -s build -p 3000",
+    "cypress:ci": "cypress run"
   },
   "browserslist": {
     "development": [
