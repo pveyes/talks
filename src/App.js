@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
+import importAll from 'import-all.macro';
 
-// list of slides
-// TODO use babel-preval / macro
-import FJest from './talks/fjest';
+const talkEntry = importAll.sync('./talks/**/index.js');
+
+const talks = Object.keys(talkEntry).map(path => ({
+  path: path.replace(/\.\/talks\/(\w+)\/index\.js/, '/$1'),
+  Component: talkEntry[path].default,
+  info: talkEntry[path].default.info,
+}));
 
 class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/fjest' component={FJest} />
+        {talks.map(talk => (
+          <Route key={talk.path} exact path={talk.path} component={talk.Component} />
+        ))}
         <Route render={() => (
           <div>
             <h1>Talks</h1>
             <ul>
-              <li>
-                <Link to='/fjest'>{'Testing JavaScript Applications with Jest'}</Link>
-              </li>
+              {talks.map(talk => (
+                <li key={talk.path}>
+                  <Link to={talk.path}>{talk.info.title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         )} />
