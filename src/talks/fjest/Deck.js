@@ -16,9 +16,11 @@ const extendCode = raw('./codes/extend.example.js');
 const jsonCode = raw('./codes/traveloka.package.json');
 const jestTransformCode = raw('./codes/jest.transform.js');
 const enzymeSetupCode = raw('./codes/enzyme-setup.js');
+const dangerCode = raw('./codes/dangerfile.js');
 
 const theme = createTheme({
   primary: '#99424f',
+  code: 'rgb(45,45,45)',
 }, {
   primary: 'Helvetica, sans-serif',
 });
@@ -78,7 +80,7 @@ export default class SlideDeck extends Component {
         <Slide>
           <Heading>Jest</Heading>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646 }}>
             <CodeSlide
               slideIndex={7}
@@ -164,7 +166,7 @@ export default class SlideDeck extends Component {
           <Heading>Rich Features</Heading>
           <Text textColor='#fff'>Powerful Mock, Snapshot Testing, Extensible Assertion</Text>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={13}
@@ -185,7 +187,7 @@ export default class SlideDeck extends Component {
             />
           </div>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={14}
@@ -200,7 +202,7 @@ export default class SlideDeck extends Component {
             />
           </div>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={15}
@@ -223,9 +225,9 @@ export default class SlideDeck extends Component {
         </Slide>
         <Slide>
           <Heading>Jest @traveloka</Heading>
-          <Text textColor='#fff'>JSDOM, Global Coverage, Multi Runner, Custom Transform, Enzyme Setup</Text>
+          <Text textColor='#fff'>JSDOM, Global Coverage, Multi Runner, Custom Transform, Enzyme Setup, Danger</Text>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={17}
@@ -242,7 +244,7 @@ export default class SlideDeck extends Component {
             />
           </div>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={18}
@@ -255,7 +257,7 @@ export default class SlideDeck extends Component {
             />
           </div>
         </Slide>
-        <Slide>
+        <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
               slideIndex={19}
@@ -264,6 +266,21 @@ export default class SlideDeck extends Component {
               lang='js'
               ranges={[
                 { loc: [0, 7], title: 'enzyme-setup.js' }
+              ]}
+            />
+          </div>
+        </Slide>
+        <Slide bgColor='code'>
+          <div style={{ height: 646, fontSize: '.5em' }}>
+            <CodeSlide
+              slideIndex={20}
+              transition={[]}
+              code={dangerCode}
+              lang='js'
+              ranges={[
+                { loc: [0, 28], title: 'dangerfile.js' },
+                { loc: [4, 23], title: 'read JSON output' },
+                { loc: [24, 28], title: 'Report status' },
               ]}
             />
           </div>
@@ -281,6 +298,10 @@ export default class SlideDeck extends Component {
             </li>
             <li><strong>Facebook is Evil</strong>, <s>PATENTS</s></li>
           </Items>
+        </Slide>
+        <Slide bgColor='#fff'>
+          <Heading textColor='primary'>Thank You</Heading>
+          <img src={require('./assets/jest.svg')} height='75px' />
         </Slide>
       </Deck>
     );
