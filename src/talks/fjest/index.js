@@ -1,15 +1,10 @@
-import React, { Component }  from 'react';
+import React, { Fragment, Component }  from 'react';
+import Head from 'react-helmet';
+import raw from 'raw.macro';
 import dynamic from '../../shared/dynamic';
-import preval from 'preval.macro';
+import parse from '../../utils/parseSlideMarkdown';
 
-// TODO remove boilerplate, write our own macro or something
-const md = preval`
-  const parse = require('../../utils/parseSlideMarkdown');
-  const mdPath = require('path').resolve(__dirname, './README.md');
-  const md = require('fs').readFileSync(mdPath, { encoding: 'utf-8' });
-  module.exports = parse(md);
-`;
-
+const md = parse(raw('./README.md'))
 const SlideDeck = dynamic(() => import('./Deck'));
 
 export default class FJest extends Component {
@@ -20,6 +15,13 @@ export default class FJest extends Component {
   }
 
   render() {
-    return <SlideDeck />;
+    return (
+      <Fragment>
+        <Head>
+          <title>{md.title}</title>
+        </Head>
+        <SlideDeck />
+      </Fragment>
+    );
   }
 }

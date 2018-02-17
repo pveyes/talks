@@ -1,0 +1,17 @@
+{
+  "jest": {
+    "projects": {
+      "<rootDir>/packages/one",
+      "<rootDir>/packages/another"
+    },
+    "collectCoverageFrom": {
+      "**/*.js",
+      "!node_modules",
+      "!**/scripts/**",
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest.transform.js",
+    },
+    "setupTestFrameworkScriptFile": "./enzyme-setup.js"
+  }
+}

@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 module.exports = function parseSlideMarkdown(md) {
   const entries = md.split('\n');
   const title = entries[0].replace('#', '').trim();

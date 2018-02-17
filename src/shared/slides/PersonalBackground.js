@@ -6,12 +6,20 @@ import { Github, Twitter, Instagram } from 'react-feather';
 const styles = {
   me: css`
     text-align: left;
-    margin-bottom: .01em;
+    margin-bottom: .1em;
   `,
   sub: css`
     text-align: left;
     font-size: .8em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: .1em;
+  `,
+  team: css`
+    text-align: left;
+    font-size: .7em;
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 1.5em;
   `,
   social: css`
     font-family: sans-serif;
@@ -39,14 +47,15 @@ const styles = {
   `,
 }
 
-const slideBg = 'https://scontent-sit4-1.cdninstagram.com/vp/c82d61553371a60b729893966c1f6f83/5B12D030/t51.2885-15/e35/16110321_413416848990275_9200249689574735872_n.jpg';
+const slideBg = require('./me.jpg');
 
 export default class PersonalBackgroundSlide extends React.Component {
   render() {
     return (
-      <Slide bgImage={slideBg} textColor='#383f51'>
+      <Slide bgImage={slideBg} textColor='#383f51' textAlign='left'>
         <h1 className={styles.me}>Fatih Kalifa</h1>
         <h2 className={styles.sub}>Software Engineer | Traveloka</h2>
+        <h3 className={styles.team}>Web Infrastructure</h3>
         <div className={styles.social}>
           <a className={styles.socialLink} href="https://github.com/pveyes">
             <Github />
