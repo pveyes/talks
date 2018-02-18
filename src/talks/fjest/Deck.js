@@ -301,7 +301,7 @@ export default class SlideDeck extends Component {
         </Slide>
         <Slide bgColor='#fff'>
           <Heading textColor='primary'>Thank You</Heading>
-          <img src={require('./assets/jest.svg')} height='75px' />
+          <img src={require('./assets/jest.svg')} height='75px' alt='Jest Logo' />
         </Slide>
       </Deck>
     );

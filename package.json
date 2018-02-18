@@ -5,14 +5,13 @@
   "devDependencies": {
     "cypress": "^1.4.2",
     "import-all.macro": "^2.0.3",
+    "prop-types": "^15.6.0",
+    "raw.macro": "^0.1.0",
     "react-scripts": "2.0.0-next.47d2d941",
     "serve": "^6.4.9"
   },
   "dependencies": {
     "emotion": "^9.0.0",
-    "preval.macro": "^1.0.2",
-    "prop-types": "^15.6.0",
-    "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-emotion": "^9.0.0",
