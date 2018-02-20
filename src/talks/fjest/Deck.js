@@ -203,9 +203,24 @@ export default class SlideDeck extends Component {
           </div>
         </Slide>
         <Slide bgColor='code'>
-          <div style={{ height: 646, fontSize: '.5em' }}>
+          <div style={{ height: 646, fontSize: '.6em' }}>
             <CodeSlide
               slideIndex={15}
+              transition={[]}
+              code={raw('./codes/raw.macro.snap')}
+              lang='js'
+              ranges={[
+                { loc: [0, 18], title: 'pveyes/raw.macro' },
+                { loc: [4, 8], title: 'Before' },
+                { loc: [11, 15], title: 'After' },
+              ]}
+            />
+          </div>
+        </Slide>
+        <Slide bgColor='code'>
+          <div style={{ height: 646, fontSize: '.5em' }}>
+            <CodeSlide
+              slideIndex={16}
               transition={[]}
               code={extendCode}
               lang='js'
@@ -230,7 +245,7 @@ export default class SlideDeck extends Component {
         <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
-              slideIndex={17}
+              slideIndex={18}
               transition={[]}
               code={jsonCode}
               lang='json'
@@ -247,7 +262,7 @@ export default class SlideDeck extends Component {
         <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
-              slideIndex={18}
+              slideIndex={19}
               transition={[]}
               code={jestTransformCode}
               lang='js'
@@ -260,7 +275,7 @@ export default class SlideDeck extends Component {
         <Slide bgColor='code'>
           <div style={{ height: 646, fontSize: '.5em' }}>
             <CodeSlide
-              slideIndex={19}
+              slideIndex={20}
               transition={[]}
               code={enzymeSetupCode}
               lang='js'
