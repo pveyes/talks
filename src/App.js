@@ -71,7 +71,7 @@ class App extends Component {
         <Route render={() => (
           <div className={styles.main}>
             <h1 className={styles.title}>{`Talks`}</h1>
-            <ul className={styles.talks}>
+            <ul className={styles.talks} data-test="talks">
               {talks.map(talk => (
                 <li key={talk.path} className={styles.talk}>
                   <Link to={talk.path}>{talk.info.title}</Link>

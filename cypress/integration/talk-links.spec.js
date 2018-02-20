@@ -12,13 +12,13 @@ describe('Talk links', () => {
   });
 
   it('shows links to all tech talks', () => {
-    const talks = cy.get('.talks');
+    const talks = cy.get('[data-test="talks"]');
     const talkTitles = [
       'Testing JavaScript Applications with Jest'
     ];
 
     talkTitles.forEach((title, idx) => {
-      talks.find(`li:nth-child(${idx + 1})`)
+      talks.find(`li:nth-child(${idx + 1}) a:first-child`)
         .should('have.text', title);
     });
   });
