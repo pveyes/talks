@@ -1,5 +1,7 @@
 # Talks
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pveyes/talks.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/pveyes/talks.svg?branch=master)](https://travis-ci.org/pveyes/talks)
 
 > My tech talks and slides

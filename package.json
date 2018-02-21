@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "cypress": "^1.4.2",
+    "cypress": "^2.0.2",
     "import-all.macro": "^2.0.3",
     "prop-types": "^15.6.0",
-    "raw.macro": "^0.1.0",
+    "raw.macro": "^0.2.0",
     "react-scripts": "2.0.0-next.47d2d941",
     "serve": "^6.4.9"
   },
