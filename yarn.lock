@@ -2368,7 +2368,7 @@ cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
 
-clipboard@^1.7.1:
+clipboard@^1.5.5, clipboard@^1.7.1:
   version "1.7.1"
   resolved "https://registry.npmjs.org/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
   dependencies:
@@ -7410,6 +7410,12 @@ pretty-format@^22.1.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+prismjs@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.6.0.tgz#118d95fb7a66dba2272e343b345f5236659db365"
+  optionalDependencies:
+    clipboard "^1.5.5"
+
 prismjs@^1.6.0:
   version "1.11.0"
   resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.11.0.tgz#297aef33eb79421bfdb19273a5092ca515970d29"
@@ -8664,9 +8670,9 @@ spectacle-terminal@^0.5.0:
     react "^15.4.1"
     react-dom "^15.4.1"
 
-spectacle@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.npmjs.org/spectacle/-/spectacle-4.0.5.tgz#463cd879f5c5d0c5056f7af65de623d3b1d3e7b2"
+spectacle@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npmjs.org/spectacle/-/spectacle-4.3.1.tgz#ddc16e250c3b58749213a1f1e4de5080a11fbc3a"
   dependencies:
     deep-object-diff "^1.0.4"
     emotion "^8.0.8"
@@ -8674,7 +8680,7 @@ spectacle@^4.0.5:
     lodash "^4.17.4"
     marksy "^6.0.2"
     normalize.css "^7.0.0"
-    prismjs "^1.6.0"
+    prismjs "1.6.0"
     react-emotion "^8.0.8"
     react-live "^1.8.0-2"
     react-redux "^5.0.5"
