@@ -25,7 +25,7 @@ export default class UnsplashSlide extends React.Component {
     return (
       <FullScreenSlide bgImage={this.props.src} maxHeight="100vh">
         <ImageCredit bgColor={bgColor}>
-          <Text textSize={24} textColor={textColor}>
+          <Text textSize={16} textColor={textColor}>
             <strong>{this.props.credit}</strong>
           </Text>
         </ImageCredit>

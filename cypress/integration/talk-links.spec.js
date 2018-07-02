@@ -14,7 +14,8 @@ describe('Talk links', () => {
   it('shows links to all tech talks', () => {
     const talks = cy.get('[data-test="talks"]');
     const talkTitles = [
-      'Testing JavaScript Applications with Jest'
+      'History of Traveloka Web Engineering',
+      'Testing JavaScript Applications with Jest',
     ];
 
     talkTitles.forEach((title, idx) => {
