@@ -11,10 +11,10 @@ const talks = Object.keys(talkEntry).map(path => ({
   info: talkEntry[path].default.info,
 })).sort((t1, t2) => {
   if (t1.info.date > t2.info.date) {
-    return 1;
+    return -1;
   }
 
-  return -1;
+  return 1;
 });
 
 const styles = {
