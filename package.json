@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "cypress": "^2.0.2",
+    "cypress": "^3.0.0",
     "import-all.macro": "^2.0.3",
     "prop-types": "^15.6.0",
     "raw.macro": "^0.2.0",
