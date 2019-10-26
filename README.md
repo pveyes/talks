@@ -1,11 +1,8 @@
-# Talks
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/pveyes/talks.svg)](https://greenkeeper.io/)
-
-[![Build Status](https://travis-ci.org/pveyes/talks.svg?branch=master)](https://travis-ci.org/pveyes/talks)
+# Talks [![Build Status](https://travis-ci.org/pveyes/talks.svg?branch=master)](https://travis-ci.org/pveyes/talks)
 
 > My tech talks and slides
 
+- [History of Traveloka Web Engineering](/src/talks/this)
 - [Testing JavaScript Applications with Jest](/src/talks/fjest)
 
 ## Running Locally

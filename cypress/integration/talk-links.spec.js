@@ -12,15 +12,13 @@ describe('Talk links', () => {
   });
 
   it('shows links to all tech talks', () => {
-    const talks = cy.get('[data-test="talks"]');
     const talkTitles = [
       'History of Traveloka Web Engineering',
       'Testing JavaScript Applications with Jest',
     ];
 
     talkTitles.forEach((title, idx) => {
-      talks.find(`li:nth-child(${idx + 1}) a:first-child`)
-        .should('have.text', title);
+      cy.get(`li:nth-child(${idx + 1}) a:first-child`).should('have.text', title);
     });
   });
 })
