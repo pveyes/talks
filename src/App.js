@@ -55,33 +55,33 @@ const styles = {
   `,
 };
 
-class App extends Component {
-  componentDidMount() {
-    talks.slice(0, 3).forEach(talk => {
-      talk.info.SlideDeck.preload()
-    });
-  }
+function Loading() {
+  return 'Loading...';
+}
 
+class App extends Component {
   render() {
     return (
       <Switch>
-        {talks.map(talk => (
-          <Route key={talk.path} exact path={talk.path} component={talk.Component} />
-        ))}
-        <Route render={() => (
-          <div className={styles.main}>
-            <h1 className={styles.title}>{`Talks`}</h1>
-            <ul className={styles.talks} data-test="talks">
-              {talks.map(talk => (
-                <li key={talk.path} className={styles.talk}>
-                  <Link to={talk.path}>{talk.info.title}</Link>
-                  <p>{talk.info.description}</p>
-                  <Link to={talk.path}>See slides</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )} />
+        <React.Suspense fallback={<Loading />}>
+          {talks.map(talk => (
+            <Route key={talk.path} exact path={talk.path} component={talk.Component} />
+          ))}
+          <Route path="/" exact>
+            <div className={styles.main}>
+              <h1 className={styles.title}>{`Talks`}</h1>
+              <ul className={styles.talks} data-test="talks">
+                {talks.map(talk => (
+                  <li key={talk.path} className={styles.talk}>
+                    <Link to={talk.path}>{talk.info.title}</Link>
+                    <p>{talk.info.description}</p>
+                    <Link to={talk.path}>See slides</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Route>
+        </React.Suspense>
       </Switch>
     );
   }

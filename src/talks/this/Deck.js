@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Deck, Appear, Slide, List, ListItem, Notes, Heading, Text, Image } from 'spectacle';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import createTheme from 'spectacle/lib/themes/default';
 import Unsplash from '../../shared/Unsplash';
 import PersonalBackgroundSlide from '../../shared/slides/PersonalBackground';

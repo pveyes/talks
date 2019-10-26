@@ -1,11 +1,10 @@
-import React, { Fragment, Component }  from 'react';
+import React, { Component } from 'react';
 import Head from 'react-helmet';
 import raw from 'raw.macro';
-import dynamic from '../../shared/dynamic';
 import parse from '../../utils/parseSlideMarkdown';
 
 const md = parse(raw('./README.md'))
-const SlideDeck = dynamic(() => import('./Deck'));
+const SlideDeck = React.lazy(() => import('./Deck'));
 
 export default class FJest extends Component {
   static info = {
@@ -16,12 +15,12 @@ export default class FJest extends Component {
 
   render() {
     return (
-      <Fragment>
+      <>
         <Head>
           <title>{md.title}</title>
         </Head>
         <SlideDeck />
-      </Fragment>
+      </>
     );
   }
 }

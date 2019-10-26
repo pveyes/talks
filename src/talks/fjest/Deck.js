@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Deck, Slide, Heading, Text } from 'spectacle';
 import Terminal from 'spectacle-terminal';
 import CodeSlide from 'spectacle-code-slide';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import raw from 'raw.macro';
 import createTheme from 'spectacle/lib/themes/default';
 import Dim from '../../shared/Dim';
@@ -53,7 +53,7 @@ export default class SlideDeck extends Component {
       <Deck theme={theme} progress='bar'>
         <Slide>
           <Heading textSize={44}>Testing JavaScript Applications with Jest</Heading>
-          <div style={{marginTop: '1em'}}>
+          <div style={{ marginTop: '1em' }}>
             <Text textSize={28} textColor="#fff">
               <Dim>https://</Dim>
               <span>talks.fatihkalifa.com/fjest</span>
@@ -125,7 +125,7 @@ export default class SlideDeck extends Component {
                 <div> › Press <TBold>Enter</TBold> to trigger a test run.</div>
               </p>
             </div>
-          ]}/>
+          ]} />
         </Slide>
         <Slide>
           <Heading>Great DX</Heading>
@@ -153,9 +153,9 @@ export default class SlideDeck extends Component {
               <div>{'    <div'}</div>
               <div>{'      style={'}</div>
               <div>{'        Object {'}</div>
-                <TError>{'+       "MsTextSizeAdjust": "100%",'}</TError>
-                <div>{'        "WebkitTextSizeAdjust": "100%",'}</div>
-                <TSuccess>{'-       "msTextSizeAdjust": "100%",'}</TSuccess>
+              <TError>{'+       "MsTextSizeAdjust": "100%",'}</TError>
+              <div>{'        "WebkitTextSizeAdjust": "100%",'}</div>
+              <TSuccess>{'-       "msTextSizeAdjust": "100%",'}</TSuccess>
               <div>{'        }'}</div>
               <div>{'      }'}</div>
               <div>{'    >'}</div>
@@ -248,7 +248,7 @@ export default class SlideDeck extends Component {
               slideIndex={18}
               transition={[]}
               code={jsonCode}
-              lang='json'
+              lang='javascript'
               ranges={[
                 { loc: [0, 17], title: 'package.json' },
                 { loc: [2, 6], title: 'Multi Runner' },

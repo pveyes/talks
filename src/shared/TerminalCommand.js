@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Type from 'react-typist';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 
 const Path = styled('strong')`
   color: #57c7ff;

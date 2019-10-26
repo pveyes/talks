@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'spectacle';
 import { css } from 'emotion';
-import { Github, Twitter, Instagram } from 'react-feather';
+import { GitHub, Twitter, Instagram } from 'react-feather';
 
 const styles = {
   me: css`
@@ -58,7 +58,7 @@ export default class PersonalBackgroundSlide extends React.Component {
         <h3 className={styles.team}>Web Infrastructure</h3>
         <div className={styles.social}>
           <a className={styles.socialLink} href="https://github.com/pveyes">
-            <Github />
+            <GitHub />
             <span>
               pveyes
             </span>

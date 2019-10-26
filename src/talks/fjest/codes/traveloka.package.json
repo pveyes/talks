@@ -1,16 +1,16 @@
 {
   "jest": {
-    "projects": {
+    "projects": [
       "<rootDir>/packages/one",
       "<rootDir>/packages/another"
-    },
-    "collectCoverageFrom": {
+    ],
+    "collectCoverageFrom": [
       "**/*.js",
       "!node_modules",
-      "!**/scripts/**",
-    },
+      "!**/scripts/**"
+    ],
     "transform": {
-      "^.+\\.js$": "<rootDir>/jest.transform.js",
+      "^.+\\.js$": "<rootDir>/jest.transform.js"
     },
     "setupTestFrameworkScriptFile": "./enzyme-setup.js"
   }
