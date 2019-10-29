@@ -13,6 +13,7 @@ describe('Talk links', () => {
 
   it('shows links to all tech talks', () => {
     const talkTitles = [
+      'You Should Make Your Own Framework',
       'History of Traveloka Web Engineering',
       'Testing JavaScript Applications with Jest',
     ];
