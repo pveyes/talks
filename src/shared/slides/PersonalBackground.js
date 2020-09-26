@@ -57,15 +57,15 @@ export default class PersonalBackgroundSlide extends React.Component {
         <h2 className={styles.sub}>Software Engineer | Traveloka</h2>
         <h3 className={styles.team}>Web Infrastructure</h3>
         <div className={styles.social}>
+          <a className={styles.socialLink} href="https://twitter.com/pveyes">
+            <Twitter />
+            <span>pveyes</span>
+          </a>
           <a className={styles.socialLink} href="https://github.com/pveyes">
             <GitHub />
             <span>
               pveyes
             </span>
-          </a>
-          <a className={styles.socialLink} href="https://twitter.com/pveyes">
-            <Twitter />
-            <span>pveyes</span>
           </a>
           <a className={styles.socialLink} href="https://fatihkalifa.com">
             <Link />
