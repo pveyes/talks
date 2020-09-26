@@ -169,6 +169,9 @@ export default class SlideDeck extends Component {
           </Slide>
           <Slide>
             <ConfettiHeading>Demo?</ConfettiHeading>
+            <Note>
+              <a href="https://codesandbox.io/s/canvas-houdini-084dv">https://codesandbox.io/s/canvas-houdini-084dv</a>
+            </Note>
           </Slide>
           <FullScreenSlideImage src="https://media3.giphy.com/media/hV7Vz9VwUaedWJZIxp/giphy.gif" />
         </Deck>
