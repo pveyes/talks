@@ -15,15 +15,16 @@
     "@emotion/styled": "^10.0.22",
     "emotion": "^10.0.17",
     "jsonp": "^0.2.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
     "react-typist": "^2.0.5",
     "spectacle": "^5.7.1",
     "spectacle-code-slide": "^0.5.2",
-    "spectacle-terminal": "^0.5.0"
+    "spectacle-terminal": "^0.5.0",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

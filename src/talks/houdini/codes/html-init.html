@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .test {
+        background-image: paint(customPainter);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test"></div>
+    <script>
+      if (window.CSS && window.CSS.paintWorklet) {
+        CSS.paintWorklet.addModule('worklet.js');
+      }
+    </script>
+  </body>
+</html>

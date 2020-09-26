@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'spectacle';
 import { css } from 'emotion';
-import { GitHub, Twitter, Instagram } from 'react-feather';
+import { GitHub, Twitter, Link } from 'react-feather';
 
 const styles = {
   me: css`
@@ -52,7 +52,7 @@ const slideBg = require('./me.jpg');
 export default class PersonalBackgroundSlide extends React.Component {
   render() {
     return (
-      <Slide bgImage={slideBg} textColor='#383f51' textAlign='left'>
+      <Slide bgColor='#fafaf7' textColor='#383f51' textAlign='left'>
         <h1 className={styles.me}>Fatih Kalifa</h1>
         <h2 className={styles.sub}>Software Engineer | Traveloka</h2>
         <h3 className={styles.team}>Web Infrastructure</h3>
@@ -67,9 +67,9 @@ export default class PersonalBackgroundSlide extends React.Component {
             <Twitter />
             <span>pveyes</span>
           </a>
-          <a className={styles.socialLink} href="https://instagram.com/pveyes">
-            <Instagram />
-            <span>fatihkalifa</span>
+          <a className={styles.socialLink} href="https://fatihkalifa.com">
+            <Link />
+            <span>https://fatihkalifa.com</span>
           </a>
         </div>
       </Slide>
