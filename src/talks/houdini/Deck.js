@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Deck, Appear, Slide, List, ListItem, Notes, Heading, Text, Image, Code } from 'spectacle';
+import { Deck, Slide, List, ListItem, Heading, Image, Code } from 'spectacle';
 import styled, { keyframes } from 'styled-components';
 import createTheme from 'spectacle/lib/themes/default';
 import CodeSlide from 'spectacle-code-slide';
@@ -90,7 +90,7 @@ export default class SlideDeck extends Component {
           <PersonalBackgroundSlide />
           <Slide bgColor="#6FA58D">
             <Heading textColor={Colors.WHITE}>
-              <img src={require('./assets/surabaya.jpg')} />SurabayaCSS
+              <img src={require('./assets/surabaya.jpg')} alt="Surabaya JS logo" />SurabayaCSS
           </Heading>
           </Slide>
           <FullScreenSlideImage src='https://media1.giphy.com/media/jOzQAhuT3WUp19JldV/giphy.gif' />
@@ -105,7 +105,7 @@ export default class SlideDeck extends Component {
             </Note>
           </Slide>
           <Slide>
-            <iframe src="https://ishoudinireadyyet.com/" frameBorder={0} width={1000} height={600} />
+            <iframe title="Houdini API Browser Support table" src="https://ishoudinireadyyet.com/" frameBorder={0} width={1000} height={600} />
             <figcaption>
               <a href="https://ishoudinireadyyet.com">https://ishoudinireadyyet.com</a></figcaption>
           </Slide>
@@ -147,10 +147,10 @@ export default class SlideDeck extends Component {
             <ConfettiHeading>Dynamic?</ConfettiHeading>
           </Slide>
           <Slide>
-            <Image src={require('./assets/hey.png')} width={600} />
+            <Image src={require('./assets/hey.png')} alt="Hey feature list with dynamic blob as list background" width={600} />
           </Slide>
           <Slide>
-            <Image src={require('./assets/blobs.png')} width={600} />
+            <Image src={require('./assets/blobs.png')} alt="Blobs.app screenshot" width={600} />
           </Slide>
           <Slide>
             <Heading textSize={TextSize.xl} textColor={Colors.BLACK}>SVG?</Heading>
