@@ -149,10 +149,6 @@ const Subtitle = styled.div`
   text-align: left;
 `;
 
-const Bigmoji = styled.span`
-  font-size: 8rem;
-`;
-
 const Image = styled.img`
   max-height: ${props => props.scale}vh;
   max-width: ${props => props.scale}vw;
@@ -286,7 +282,7 @@ export default function SlideDeck() {
         <LeftTitle>When?</LeftTitle>
       </Slide>
       <Slide>
-        <Bigmoji>🤒</Bigmoji>
+        <span style={{ fontSize: '8rem' }} role="img" aria-label="Sick emoji">🤒</span>
         <Notes>
           Your project will get bigger, you'll feel some pain.
           That's when you start thinking about this
@@ -478,7 +474,7 @@ export default function SlideDeck() {
         <Notes>Just recently released from Zeit</Notes>
       </Slide>
       <Slide>
-        <div>🤯</div>
+        <span style={{ display: 'block' }} role="img" aria-label="Mind blown">🤯</span>
         <Image scale={50} src={require('./assets/hooks-compose.png')} />
         <Notes>It works perfectly with our useAPI hooks </Notes>
       </Slide>
@@ -520,7 +516,7 @@ export default function SlideDeck() {
         <SubtitleAppear>Sharing approach > sharing code</SubtitleAppear>
       </Slide>
       <Slide>
-        <Heading>Thank you 🙇‍</Heading>
+        <Heading>Thank you <span role="img" aria-label="Bow emoji">🙇‍</span></Heading>
       </Slide>
     </Deck>
   )
