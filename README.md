@@ -1,4 +1,4 @@
-# Talks [![Build Status](https://travis-ci.org/pveyes/talks.svg?branch=master)](https://travis-ci.org/pveyes/talks)
+# Talks [![Netlify Status](https://api.netlify.com/api/v1/badges/e1e2f66a-28db-4a98-916a-bb8feb8c7fba/deploy-status)](https://app.netlify.com/sites/pveyes-talks/deploys)
 
 > My tech talks and slides
 
