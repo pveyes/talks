@@ -47,8 +47,6 @@ const styles = {
   `,
 }
 
-const slideBg = require('./me.jpg');
-
 export default class PersonalBackgroundSlide extends React.Component {
   render() {
     return (
