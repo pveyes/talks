@@ -2,6 +2,7 @@
 
 > My tech talks and slides
 
+- [Declarative Dynamic Pattern with CSS Paint API](/src/talks/houdini)
 - [You Should Make Your Own Framework](/src/talks/fw)
 - [History of Traveloka Web Engineering](/src/talks/this)
 - [Testing JavaScript Applications with Jest](/src/talks/fjest)
